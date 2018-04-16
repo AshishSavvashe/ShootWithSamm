@@ -1,0 +1,529 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:elevation="15dp"
+    android:paddingBottom="10dp"
+    app:cardPreventCornerOverlap="false"
+    app:cardUseCompatPadding="true">-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerInParent="true">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+       <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="vertical">
+
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <!--    customer name   -->
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_weight="0"
+                    android:text="Customer Name"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_weight="0"
+                    android:text=":"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textViewCustomerName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:textAppearance="?android:textAppearanceSmall" />
+
+            </TableRow>
+
+            <include layout="@layout/layout_separator" />
+            <!--    Franchisee Name   -->
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_weight="0"
+                    android:text="Franchisee Name"
+                    android:textAppearance="?android:textAppearanceSmall" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_weight="0"
+                    android:text=":"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textViewFranchiseeName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:layout_weight="1"
+                    android:layout_marginStart="10dp"
+                    android:text=""
+                    android:textAppearance="?android:textAppearanceSmall" />
+
+            </TableRow>
+            <!--    Lead Description    -->
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_weight="0"
+                    android:text="Description"
+                    android:textAppearance="?android:textAppearanceSmall" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_weight="0"
+                    android:text=":"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textViewLeadDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:layout_marginStart="10dp"
+                    android:textAppearance="?android:textAppearanceSmall" />
+
+            </TableRow>
+            <!--    Lead Date    -->
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_weight="0"
+                    android:text="Lead Date"
+                    android:textAppearance="?android:textAppearanceSmall" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_weight="0"
+                    android:text=":"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textViewLeadDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:layout_weight="1"
+                    android:lines="1"
+                    android:text=""
+                    android:layout_marginStart="10dp"
+                    android:textAppearance="?android:textAppearanceSmall" />
+
+            </TableRow>
+
+            <!--    Mobile No    -->
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_weight="0"
+                    android:text="Mobile No"
+                    android:textAppearance="?android:textAppearanceSmall" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_weight="0"
+                    android:text=":"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textViewMobileNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:layout_marginStart="10dp"
+                    android:textAppearance="?android:textAppearanceSmall" />
+
+            </TableRow>
+            <!--    Email Id    -->
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_weight="0"
+                    android:text="Email Id"
+                    android:textAppearance="?android:textAppearanceSmall" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_weight="0"
+                    android:text=":"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textViewEmailId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:layout_marginStart="10dp"
+                    android:textAppearance="?android:textAppearanceSmall" />
+
+            </TableRow>
+            <!--    Photoshoot Type    -->
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_weight="0"
+                    android:text="Type"
+                    android:textAppearance="?android:textAppearanceSmall" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_weight="0"
+                    android:text=":"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textViewPhotoshootType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:layout_marginStart="10dp"
+                    android:textAppearance="?android:textAppearanceSmall" />
+
+            </TableRow>
+            <!--    Photoshoot City    -->
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_weight="0"
+                    android:text="City"
+                    android:textAppearance="?android:textAppearanceSmall" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_weight="0"
+                    android:text=":"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textViewPhotoshootCity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:layout_marginStart="10dp"
+                    android:textAppearance="?android:textAppearanceSmall" />
+
+            </TableRow>
+            <!--    Address     -->
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_weight="0"
+                    android:text="Address"
+                    android:textAppearance="?android:textAppearanceSmall" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_weight="0"
+                    android:text=":"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textViewAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:layout_marginStart="10dp"
+                    android:textAppearance="?android:textAppearanceSmall" />
+
+            </TableRow>
+            <!--    Photoshoot FromDate    -->
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_weight="0"
+                    android:text="From Date"
+                    android:textAppearance="?android:textAppearanceSmall" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_weight="0"
+                    android:text=":"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textViewPhotoshootFromDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:layout_marginStart="10dp"
+                    android:textAppearance="?android:textAppearanceSmall" />
+
+            </TableRow>
+            <!--    Photoshoot FromTo    -->
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_weight="0"
+                    android:text="To Date"
+                    android:textAppearance="?android:textAppearanceSmall" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_weight="0"
+                    android:text=":"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textViewPhotoshootFromTo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:layout_marginStart="10dp"
+                    android:textAppearance="?android:textAppearanceSmall" />
+
+            </TableRow>
+            <!--    Special Instruction     -->
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_weight="0"
+                    android:text="Special Instruction"
+                    android:textAppearance="?android:textAppearanceSmall" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_weight="0"
+                    android:text=":"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textViewSpecialInstruction"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:layout_marginStart="10dp"
+                    android:textAppearance="?android:textAppearanceSmall" />
+
+            </TableRow>
+
+            <include layout="@layout/layout_separator" />
+            <!--&lt;!&ndash;    Price    &ndash;&gt;-->
+            <!--<TableRow-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:padding="10dp">-->
+
+            <!--&lt;!&ndash;<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_column="0"-->
+            <!--android:layout_weight="0"-->
+            <!--android:text="Price  : "-->
+            <!--android:gravity="right|end"-->
+            <!--android:textAppearance="?android:textAppearanceSmall" />&ndash;&gt;-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/textViewPrice"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_column="1"-->
+            <!--android:layout_weight="1"-->
+            <!--android:gravity="right"-->
+            <!--android:text=""-->
+            <!--android:textAppearance="?android:textAppearanceSmall"-->
+            <!--android:textStyle="bold" />-->
+
+            <!--</TableRow>-->
+
+        </TableLayout>
+        <TextView
+            android:id="@+id/textViewPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="end"
+            android:text=""
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textStyle="bold" />
+
+        </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/layoutLeadInfoBtns"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnAccept"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/drawable_button_selector"
+                android:text="Accept"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite" />
+
+            <Button
+                android:id="@+id/btnReject"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/drawable_button_selector"
+                android:text="Reject"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <include layout="@layout/layout_progress_bar" />
+
+</RelativeLayout>

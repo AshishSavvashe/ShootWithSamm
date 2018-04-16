@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerInParent="true"
+    android:gravity="center"
+    tools:context=".activities.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:paddingBottom="10dp"
+            android:src="@drawable/logo" />
+
+        <EditText
+            android:id="@+id/editTextUsernameLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:hint="@string/strUserNameLabel"
+            android:inputType="text|textNoSuggestions"
+            android:lines="1"
+            android:background="@drawable/drawable_bottom_border"
+            android:maxLines="1"
+            android:padding="10dp"
+            android:textAppearance="?android:textAppearanceSmall" />
+
+        <EditText
+            android:id="@+id/editTextPasswordLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:hint="@string/strPasswordLabel"
+            android:inputType="textPassword"
+            android:lines="1"
+            android:maxLines="1"
+            android:padding="10dp"
+            android:background="@drawable/drawable_bottom_border"
+            android:textAppearance="?android:textAppearanceSmall" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/checkboxRememberMe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Remember Me"
+                android:textAppearance="?android:textAppearanceSmall" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buttonLogin"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:text="@string/strLoginLabel"
+            android:background="@drawable/drawable_button_selector"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="@color/colorWhite" />
+    </LinearLayout>
+
+    <include layout="@layout/layout_progress_bar" />
+</RelativeLayout>

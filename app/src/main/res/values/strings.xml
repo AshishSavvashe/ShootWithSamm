@@ -1,0 +1,88 @@
+<resources>
+    <string name="app_name">ShootWithSam</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="strUserNameLabel">User Name</string>
+    <string name="strPasswordLabel">Password</string>
+    <string name="strLoginLabel">Login</string>
+
+    <string name="str_developer_label">Developed by Noetic Systems</string>
+
+    <string name="strNoInternetMessage">No Internet Connection.</string>
+    <string name="strWrongMobNumFormatMsssage">Wrong User Name</string>
+    <string name="strPasswordLessThan8Message">Password is less than 8 characters</string>
+    <string name="strUsernameFormatMessage">Wrong Username</string>
+    <string name="strPasswordEmptyMessage">Password is empty</string>
+    <string name="strUsernameEmptyMessage">Username is empty</string>
+    <string name="strAlreadyLoggedInMessage">User already logged in</string>
+    <string name="strWrongCredentialsMessage">Wrong username or password</string>
+    <string name="strWaitMessage">Please Wait</string>
+    <string name="strCancelLabel">Cancel</string>
+    <string name="strSubmitLabel">Submit</string>
+    <string name="strPasswordVisibilityLabel">Password Visibility</string>
+    <string name="strPasswordHintLabel">Password Hint</string>
+    <string name="strMandatoryFieldsMsg">Note : <font color="red">*</font> represents mandatory fields.</string>
+    <string name="title_activity_menu_drawer">MenuDrawer</string>
+    <string name="strLogoutLabel">Logout</string>
+    <string name="strLogoutMessage">Are you sure want to logout?</string>
+    <string name="strNoDataFound">No Data Avaliable</string>
+    <string name="strProfileLabel">Profile</string>
+    <string name="strChangePasswordLabel">Change Password</string>
+    <string name="strNewConfirmPwdLabel">Confirm New Password</string>
+    <string name="strNewPwdLabel">New Password</string>
+    <string name="strLoginFailMessage">Invalid Email or Password</string>
+    <string name="strFailureMessage">Some error has occurred. Try again later</string>
+    <string name="strGettingDataMessage">Getting Data...</string>
+    <string name="strAllLeadLabel">All Lead</string>
+    <string name="strRupeeLabel">\u20B9</string>
+    <string name="strLeadDetailsLabel">Lead Details</string>
+    <string name="strNotificationLabel">Notification</string>
+    <string name="strUserDetailsLabel">User Details</string>
+    <string name="str_Unseen_label">Unseen</string>
+    <string name="str_Seen_label">Seen</string>
+    <string name="strDateLabel">Date</string>
+    <string name="strPwdHintMessage">
+        a. Password should be minimum of 6 characters in length.
+        \n\nb. Password should have atleast 1 special character like @,#,$,% etc (Except ?,/,\ ).
+        \n\nc. Password should have atleast 1 number.
+        \n\nd. Password should have atleast 1 capital letter.
+    </string>
+    <string-array name="Notification">
+        <item>@string/strNotificationLabel</item>
+        <item>@string/strDateLabel</item>
+    </string-array>
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="strJanuary">January</string>
+    <string name="strFebruary">February</string>
+    <string name="strMarch">March</string>
+    <string name="strApril">April</string>
+    <string name="strMay">May</string>
+    <string name="strJune">June</string>
+    <string name="strJuly">July</string>
+    <string name="strAugust">August</string>
+    <string name="strSeptember">September</string>
+    <string name="strOctober">October</string>
+    <string name="strNovember">November</string>
+    <string name="strDecember">December</string>
+
+    <string-array name="arrayMonths">
+        <item>@string/strJanuary</item>
+        <item>@string/strFebruary</item>
+        <item>@string/strMarch</item>
+        <item>@string/strApril</item>
+        <item>@string/strMay</item>
+        <item>@string/strJune</item>
+        <item>@string/strJuly</item>
+        <item>@string/strAugust</item>
+        <item>@string/strSeptember</item>
+        <item>@string/strOctober</item>
+        <item>@string/strNovember </item>
+        <item>@string/strDecember</item>
+    </string-array>
+
+</resources>
